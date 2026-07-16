@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Dr. Jill Zhao",
+      "role": "Founder & Chair",
+      "institution": "University of Lincoln",
+      "bio": "Founded the Collective in 2023 and leads its research on participatory approaches to net-zero transition.",
+      "image": "../images/member-placeholder.svg"
+    },
+    {
+      "name": "Add a member",
+      "role": "Role / title",
+      "institution": "Institution",
+      "bio": "Use the editor dashboard (/admin) or edit content/members.json to add real member profiles.",
+      "image": "../images/member-placeholder.svg"
+    }
+  ]
+}

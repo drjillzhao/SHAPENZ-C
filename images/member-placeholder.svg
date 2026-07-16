@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450">
+  <rect width="600" height="450" fill="#EDE9DA"/>
+  <circle cx="108.0" cy="369.0" r="225.0" fill="#CC9A2E" fill-opacity="0.15"/>
+  <circle cx="510.0" cy="67.5" r="157.5" fill="#CC9A2E" fill-opacity="0.12"/>
+  <text x="50%" y="50%" font-family="Georgia, serif" font-size="31.500000000000004" fill="#CC9A2E" text-anchor="middle" dominant-baseline="middle">Member photo</text>
+</svg>

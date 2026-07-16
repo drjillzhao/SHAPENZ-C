@@ -1,0 +1,126 @@
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME   # <-- change this
+  branch: main
+  base_url: https://YOUR-OAUTH-PROXY.example.workers.dev  # <-- change this (see README)
+  auth_endpoint: auth
+
+# Every image an editor uploads is saved into /images and referenced from there.
+media_folder: "images"
+public_folder: "../images"
+
+site_url: https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/   # <-- change this
+display_url: https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - file: "content/site.json"
+        label: "General Info & Homepage"
+        name: "site"
+        fields:
+          - { label: "Organisation Name", name: "org_name", widget: "string" }
+          - { label: "Homepage Tagline", name: "tagline", widget: "string" }
+          - { label: "Intro Paragraph", name: "intro", widget: "text" }
+          - { label: "Discipline Tags", name: "disciplines", widget: "list" }
+          - { label: "Story Heading", name: "story_heading", widget: "string" }
+          - { label: "Story Image", name: "story_image", widget: "image" }
+          - { label: "Story Body", name: "story_body", widget: "text" }
+          - { label: "Story Stats Line", name: "story_stats", widget: "text" }
+          - { label: "Contact Email", name: "contact_email", widget: "string" }
+          - { label: "Contact Phone", name: "contact_phone", widget: "string" }
+          - { label: "Contact Address", name: "contact_address", widget: "string" }
+          - label: "Social Links"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Facebook URL", name: "facebook", widget: "string", required: false }
+              - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+              - { label: "X / Twitter URL", name: "x", widget: "string", required: false }
+              - { label: "TikTok URL", name: "tiktok", widget: "string", required: false }
+          - { label: "Footer Copyright Note", name: "footer_note", widget: "string" }
+
+  - name: "news"
+    label: "News"
+    files:
+      - file: "content/news.json"
+        label: "News Items"
+        name: "news"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            label_singular: "News item"
+            summary: "{{headline}}"
+            fields:
+              - { label: "Headline", name: "headline", widget: "text" }
+              - { label: "Date", name: "date", widget: "date" }
+              - { label: "Link Text", name: "link_text", widget: "string", required: false }
+              - { label: "Link URL", name: "link_url", widget: "string", required: false }
+
+  - name: "events"
+    label: "Events"
+    files:
+      - file: "content/events.json"
+        label: "SMM Events"
+        name: "events"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            label_singular: "Event"
+            summary: "{{title}} ({{status}})"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Order number (1st, 2nd, 3rd…)", name: "order", widget: "number", value_type: "int" }
+              - label: "Status"
+                name: "status"
+                widget: "select"
+                options: ["upcoming", "past"]
+              - { label: "Date Label (e.g. 'Thu 22 Apr')", name: "date_label", widget: "string" }
+              - { label: "Start Date", name: "date_start", widget: "date", required: false }
+              - { label: "End Date", name: "date_end", widget: "date", required: false }
+              - { label: "Venue / Address", name: "venue", widget: "text" }
+              - { label: "City", name: "city", widget: "string", required: false }
+              - { label: "Summary", name: "summary", widget: "text", required: false }
+              - { label: "Image", name: "image", widget: "image", required: false }
+
+  - name: "members"
+    label: "Members"
+    files:
+      - file: "content/members.json"
+        label: "Member Profiles"
+        name: "members"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            label_singular: "Member"
+            summary: "{{name}} — {{role}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role / Title", name: "role", widget: "string", required: false }
+              - { label: "Institution", name: "institution", widget: "string", required: false }
+              - { label: "Bio", name: "bio", widget: "text", required: false }
+              - { label: "Photo", name: "image", widget: "image", required: false }
+
+  - name: "publications"
+    label: "Publications"
+    files:
+      - file: "content/publications.json"
+        label: "Publications List"
+        name: "publications"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            label_singular: "Publication"
+            summary: "{{title}} ({{year}})"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Authors / Editors", name: "authors", widget: "string", required: false }
+              - { label: "Outlet / Journal", name: "outlet", widget: "string", required: false }
+              - { label: "Year", name: "year", widget: "string", required: false }
+              - { label: "Link (URL)", name: "url", widget: "string", required: false }
+              - { label: "Summary", name: "summary", widget: "text", required: false }

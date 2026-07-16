@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#EDE9DA"/>
+  <circle cx="144.0" cy="491.99999999999994" r="300.0" fill="#2E4632" fill-opacity="0.15"/>
+  <circle cx="680.0" cy="90.0" r="210.0" fill="#2E4632" fill-opacity="0.12"/>
+  <text x="50%" y="50%" font-family="Georgia, serif" font-size="42.00000000000001" fill="#2E4632" text-anchor="middle" dominant-baseline="middle">SMM 1</text>
+</svg>

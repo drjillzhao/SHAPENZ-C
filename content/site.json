@@ -1,0 +1,20 @@
+{
+  "org_name": "SHAPEing Net Zero Collective",
+  "tagline": "Connecting ECRs in SHAPEing a Sustainable Future",
+  "intro": "The SHAPEing Net Zero Collective is a vibrant community of Early Career Researchers working on sustainability across SHAPE (Social Science, Humanities, Arts for People and Economy/Environment) disciplines to take climate action and enable a just transition.",
+  "disciplines": ["Social Sciences", "Humanities", "Arts", "People", "Economy", "Environment", "Sustainability", "Net Zero", "ECRs"],
+  "story_heading": "Our Story",
+  "story_image": "../images/our-story.svg",
+  "story_body": "Founded in 2023 at the University of Lincoln by Dr. Jill Zhao, and supported by the British Academy Early Career Researcher Network, we are dedicated to creating a supportive home for early career researchers in the SHAPE disciplines. Our mission is to address the critical issues of the climate crisis and social inequality, using our research to advocate for a just transition to net zero.",
+  "story_stats": "We now support over 100 ECRs in our network, with annual conferences hosted in cities nationwide, and a thematic collection of essays published by the Journal of the British Academy.",
+  "contact_email": "info@mysite.com",
+  "contact_phone": "123-456-7890",
+  "contact_address": "500 Terry Francine Street, 6th Floor, San Francisco, CA 94158",
+  "social": {
+    "facebook": "https://www.facebook.com/",
+    "instagram": "https://www.instagram.com/",
+    "x": "https://x.com/",
+    "tiktok": "https://www.tiktok.com/"
+  },
+  "footer_note": "\u00a9 2026 by SHAPEing Net Zero Collective."
+}

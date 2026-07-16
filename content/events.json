@@ -1,0 +1,61 @@
+{
+  "items": [
+    {
+      "title": "5th Sustainability Multidisciplinary Meetup",
+      "order": 5,
+      "status": "upcoming",
+      "date_label": "Thu 22 Apr",
+      "date_start": "2027-04-22",
+      "venue": "University of Plymouth",
+      "city": "Plymouth",
+      "summary": "Join us for insightful sessions, interactive workshops, and impactful networking opportunities.",
+      "image": "../images/event-5.svg"
+    },
+    {
+      "title": "4th Sustainability Multidisciplinary Meetup",
+      "order": 4,
+      "status": "past",
+      "date_label": "Wed 29 Apr",
+      "date_start": "2026-04-29",
+      "date_end": "2026-04-30",
+      "venue": "University of the West of Scotland, Hamilton International Technology Park, Stephenson Pl, Blantyre, Glasgow G72 0LH, UK",
+      "city": "Glasgow",
+      "summary": "",
+      "image": "../images/event-4.svg"
+    },
+    {
+      "title": "3rd Sustainability Multidisciplinary Meetup",
+      "order": 3,
+      "status": "past",
+      "date_label": "Tue 08 Apr",
+      "date_start": "2025-04-08",
+      "date_end": "2025-04-09",
+      "venue": "University of the West of England, Coldharbour Ln, Stoke Gifford, Bristol BS16 1QY, UK",
+      "city": "UWE",
+      "summary": "",
+      "image": "../images/event-3.svg"
+    },
+    {
+      "title": "2nd Sustainability Multidisciplinary Meetup",
+      "order": 2,
+      "status": "past",
+      "date_label": "Mon 15 Apr",
+      "date_start": "2024-04-15",
+      "venue": "Jisc, 4 Portwall Ln, Redcliffe, Bristol BS1 6NB, UK",
+      "city": "Bristol city centre",
+      "summary": "",
+      "image": "../images/event-2.svg"
+    },
+    {
+      "title": "1st Sustainability Multidisciplinary Meetup",
+      "order": 1,
+      "status": "past",
+      "date_label": "Tue 11 Apr",
+      "date_start": "2023-04-11",
+      "venue": "University of Lincoln, Brayford Pool, Lincoln LN6 7TS, UK",
+      "city": "Lincoln",
+      "summary": "",
+      "image": "../images/event-1.svg"
+    }
+  ]
+}
