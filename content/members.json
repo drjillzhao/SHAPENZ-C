@@ -12,7 +12,7 @@
       "role": "Role / title",
       "institution": "Institution",
       "bio": "Use the editor dashboard (/admin) or edit content/members.json to add real member profiles.",
-      "image": "../images/member-placeholder.svg"
+      "image": "images/member-placeholder.svg"
     }
   ]
 }
