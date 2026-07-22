@@ -9,7 +9,7 @@
       "venue": "University of Plymouth",
       "city": "Plymouth",
       "summary": "Join us for insightful sessions, interactive workshops, and impactful networking opportunities.",
-      "image": "../images/event-5.svg"
+      "image": "images/event-5.svg"
     },
     {
       "title": "4th Sustainability Multidisciplinary Meetup",
@@ -21,7 +21,7 @@
       "venue": "University of the West of Scotland, Hamilton International Technology Park, Stephenson Pl, Blantyre, Glasgow G72 0LH, UK",
       "city": "Glasgow",
       "summary": "",
-      "image": "../images/event-4.svg"
+      "image": "images/event-4.svg"
     },
     {
       "title": "3rd Sustainability Multidisciplinary Meetup",
@@ -33,7 +33,7 @@
       "venue": "University of the West of England, Coldharbour Ln, Stoke Gifford, Bristol BS16 1QY, UK",
       "city": "UWE",
       "summary": "",
-      "image": "../images/event-3.svg"
+      "image": "images/event-3.svg"
     },
     {
       "title": "2nd Sustainability Multidisciplinary Meetup",
@@ -44,7 +44,7 @@
       "venue": "Jisc, 4 Portwall Ln, Redcliffe, Bristol BS1 6NB, UK",
       "city": "Bristol city centre",
       "summary": "",
-      "image": "../images/event-2.svg"
+      "image": "images/event-2.svg"
     },
     {
       "title": "1st Sustainability Multidisciplinary Meetup",
