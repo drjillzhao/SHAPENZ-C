@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME   # <-- change this
+  repo: drjillzhao/SHAPENZ-C
   branch: main
   base_url: https://YOUR-OAUTH-PROXY.example.workers.dev  # <-- change this (see README)
   auth_endpoint: auth
@@ -9,8 +9,8 @@ backend:
 media_folder: "images"
 public_folder: "../images"
 
-site_url: https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/   # <-- change this
-display_url: https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/
+site_url: https://drjillzhao.github.io/SHAPENZ-C/ 
+display_url: https://drjillzhao.github.io/SHAPENZ-C/
 
 collections:
   - name: "settings"
