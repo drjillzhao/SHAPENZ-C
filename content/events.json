@@ -74,6 +74,17 @@
         "images/events/smm4-5.jpg",
         "images/events/smm4-6.jpg",
         "images/events/smm4-7.jpg"
+           ]
+    },
+    {
+      "order": 5,
+      "title": "SMM5",
+      "status": "upcoming",
+      "date_label": "May 2027",
+      "city": "Exeter",
+      "venue": "University of Exeter",
+      "summary": "The 5th meetup, hosted in Exeter, details to follow",
+      "images": [
       ]
     }
   ]
