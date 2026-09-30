@@ -68,7 +68,7 @@ async function renderHome() {
     if (chips) chips.innerHTML = site.disciplines.map(d => `<span class="chip">${d}</span>`).join("");
 
     const storyImg = document.querySelector("[data-story-image]");
-    if (storyImg) storyImg.src = site.story_image;
+    if (storyImg && site.story_image) storyImg.src = site.story_image;
     const storyBody = document.querySelector("[data-story-body]");
     if (storyBody) storyBody.textContent = site.story_body;
     const storyStats = document.querySelector("[data-story-stats]");
@@ -151,6 +151,11 @@ async function renderMembers() {
     return;
   }
   members.forEach(m => {
+    const links = [
+      m.linkedin ? `<a href="${m.linkedin}" target="_blank" rel="noopener" class="member-link">LinkedIn</a>` : "",
+      m.orcid    ? `<a href="${m.orcid}"    target="_blank" rel="noopener" class="member-link">ORCID</a>`    : "",
+      m.twitter  ? `<a href="${m.twitter}"  target="_blank" rel="noopener" class="member-link">Twitter/X</a>` : "",
+    ].filter(Boolean).join(" ");
     grid.appendChild(el(`
       <article class="member-card">
         <img src="${m.image || "images/member-placeholder.svg"}" alt="${m.name}">
@@ -158,6 +163,7 @@ async function renderMembers() {
           <h3>${m.name}</h3>
           <span class="member-role">${[m.role, m.institution].filter(Boolean).join(" · ")}</span>
           <p>${m.bio || ""}</p>
+          ${links ? `<div class="member-links">${links}</div>` : ""}
         </div>
       </article>
     `));
