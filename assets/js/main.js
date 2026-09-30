@@ -118,9 +118,48 @@ async function renderHome() {
   }
 }
 
+/* ---------- lightbox ---------- */
+function initLightbox() {
+  const lb = document.createElement("div");
+  lb.id = "lightbox";
+  lb.innerHTML = `<div class="lb-backdrop"></div><div class="lb-frame"><button class="lb-close" aria-label="Close">✕</button><img class="lb-img" src="" alt=""><div class="lb-nav"><button class="lb-prev" aria-label="Previous">‹</button><button class="lb-next" aria-label="Next">›</button></div></div>`;
+  document.body.appendChild(lb);
+
+  let images = [], current = 0;
+
+  function show(imgs, idx) {
+    images = imgs; current = idx;
+    lb.querySelector(".lb-img").src = images[current];
+    lb.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+  function close() {
+    lb.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+  function step(dir) {
+    current = (current + dir + images.length) % images.length;
+    lb.querySelector(".lb-img").src = images[current];
+  }
+
+  lb.querySelector(".lb-backdrop").addEventListener("click", close);
+  lb.querySelector(".lb-close").addEventListener("click", close);
+  lb.querySelector(".lb-prev").addEventListener("click", () => step(-1));
+  lb.querySelector(".lb-next").addEventListener("click", () => step(1));
+  document.addEventListener("keydown", e => {
+    if (!lb.classList.contains("open")) return;
+    if (e.key === "Escape") close();
+    if (e.key === "ArrowLeft") step(-1);
+    if (e.key === "ArrowRight") step(1);
+  });
+
+  return show;
+}
+
 /* ---------- events page ---------- */
 async function renderEvents() {
-  const events = (await loadList("events.json")).sort((a, b) => b.order - a.order);
+  const showLightbox = initLightbox();
+  const events = (await loadList("events.json")).sort((a, b) => a.order - b.order);
   const list = document.querySelector("[data-events-timeline]");
   if (!list) return;
   list.innerHTML = "";
@@ -129,14 +168,29 @@ async function renderEvents() {
     return;
   }
   events.forEach(e => {
-    list.appendChild(el(`
+    const images = Array.isArray(e.images) ? e.images : (e.image ? [e.image] : []);
+    const photoStrip = images.length ? `
+      <div class="event-photos">
+        ${images.map((src, i) => `<img src="${src}" alt="${e.title} photo ${i+1}" class="event-thumb" data-index="${i}">`).join("")}
+      </div>` : "";
+
+    const item = el(`
       <li data-order="${String(e.order).padStart(2, "0")}">
-        <div class="t-title">${e.title} ${e.status === "upcoming" ? "· <span style='color:var(--amber-deep)'>Upcoming</span>" : ""}</div>
-        <div class="t-meta">${e.date_label}${e.date_end ? " – " + fmtDate(e.date_end) : ""} · ${e.city || ""}</div>
-        <p>${e.venue}</p>
+        <div class="t-title">${e.title}${e.status === "upcoming" ? " · <span style='color:var(--amber-deep)'>Upcoming</span>" : ""}</div>
+        <div class="t-meta">${e.date_label}${e.date_end ? " – " + fmtDate(e.date_end) : ""}${e.city ? " · " + e.city : ""}</div>
+        <p>${e.venue || ""}</p>
         ${e.summary ? `<p>${e.summary}</p>` : ""}
+        ${photoStrip}
       </li>
-    `));
+    `);
+
+    if (images.length) {
+      item.querySelectorAll(".event-thumb").forEach(img => {
+        img.addEventListener("click", () => showLightbox(images, +img.dataset.index));
+      });
+    }
+
+    list.appendChild(item);
   });
 }
 
