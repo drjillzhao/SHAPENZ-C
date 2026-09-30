@@ -173,6 +173,43 @@ section.alt{ background: var(--paper-raised); border-top: 1px solid var(--line);
 .timeline .t-title{ font-weight: 700; color: var(--forest-deep); }
 .timeline .t-meta{ font-family: var(--mono); font-size: 13px; color: var(--ink-soft); }
 
+/* ---------- event photo strip ---------- */
+.event-photos{
+  display: flex; gap: 10px; overflow-x: auto; padding-bottom: 6px; margin-top: 14px;
+  scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent;
+}
+.event-photos::-webkit-scrollbar{ height: 4px; }
+.event-photos::-webkit-scrollbar-track{ background: transparent; }
+.event-photos::-webkit-scrollbar-thumb{ background: var(--line-strong); border-radius: 99px; }
+.event-thumb{
+  width: 140px; height: 100px; flex: none;
+  object-fit: cover; border-radius: var(--radius);
+  border: 1px solid var(--line); cursor: pointer;
+  transition: opacity .15s, border-color .15s;
+}
+.event-thumb:hover{ opacity: .85; border-color: var(--forest); }
+
+/* ---------- lightbox ---------- */
+#lightbox{ display:none; position:fixed; inset:0; z-index:200; align-items:center; justify-content:center; }
+#lightbox.open{ display:flex; }
+.lb-backdrop{ position:absolute; inset:0; background:rgba(22,36,28,.88); }
+.lb-frame{
+  position:relative; z-index:1; max-width:90vw; max-height:90vh;
+  display:flex; align-items:center; justify-content:center;
+}
+.lb-img{ max-width:90vw; max-height:85vh; object-fit:contain; border-radius:var(--radius); display:block; }
+.lb-close{
+  position:absolute; top:-40px; right:0;
+  background:none; border:none; color:#fff; font-size:22px; cursor:pointer; line-height:1;
+}
+.lb-nav{ position:absolute; inset:0; display:flex; align-items:center; justify-content:space-between; pointer-events:none; }
+.lb-prev, .lb-next{
+  pointer-events:all; background:rgba(22,36,28,.55); border:none; color:#fff;
+  font-size:32px; line-height:1; padding:12px 16px; cursor:pointer; border-radius:var(--radius);
+  transition:background .15s;
+}
+.lb-prev:hover, .lb-next:hover{ background:rgba(22,36,28,.85); }
+
 /* ---------- grids: members / publications ---------- */
 .card-grid{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 @media (max-width: 900px){ .card-grid{ grid-template-columns: repeat(2,1fr); } }
