@@ -1,61 +1,41 @@
 {
   "items": [
     {
-      "title": "5th Sustainability Multidisciplinary Meetup",
-      "order": 5,
-      "status": "upcoming",
-      "date_label": "Thu 22 Apr",
-      "date_start": "2027-04-22",
-      "venue": "University of Plymouth",
-      "city": "Plymouth",
-      "summary": "Join us for insightful sessions, interactive workshops, and impactful networking opportunities.",
-      "image": "images/event-5.svg"
-    },
-    {
-      "title": "4th Sustainability Multidisciplinary Meetup",
-      "order": 4,
-      "status": "past",
-      "date_label": "Wed 29 Apr",
-      "date_start": "2026-04-29",
-      "date_end": "2026-04-30",
-      "venue": "University of the West of Scotland, Hamilton International Technology Park, Stephenson Pl, Blantyre, Glasgow G72 0LH, UK",
-      "city": "Glasgow",
-      "summary": "",
-      "image": "images/event-4.svg"
-    },
-    {
-      "title": "3rd Sustainability Multidisciplinary Meetup",
-      "order": 3,
-      "status": "past",
-      "date_label": "Tue 08 Apr",
-      "date_start": "2025-04-08",
-      "date_end": "2025-04-09",
-      "venue": "University of the West of England, Coldharbour Ln, Stoke Gifford, Bristol BS16 1QY, UK",
-      "city": "UWE",
-      "summary": "",
-      "image": "images/event-3.svg"
-    },
-    {
-      "title": "2nd Sustainability Multidisciplinary Meetup",
-      "order": 2,
-      "status": "past",
-      "date_label": "Mon 15 Apr",
-      "date_start": "2024-04-15",
-      "venue": "Jisc, 4 Portwall Ln, Redcliffe, Bristol BS1 6NB, UK",
-      "city": "Bristol city centre",
-      "summary": "",
-      "image": "images/event-2.svg"
-    },
-    {
-      "title": "1st Sustainability Multidisciplinary Meetup",
       "order": 1,
+      "title": "SMM1",
       "status": "past",
-      "date_label": "Tue 11 Apr",
-      "date_start": "2023-04-11",
-      "venue": "University of Lincoln, Brayford Pool, Lincoln LN6 7TS, UK",
+      "date_label": "Mar 2023",
       "city": "Lincoln",
-      "summary": "",
-      "image": "../images/event-1.svg"
+      "venue": "University of Lincoln",
+      "summary": "The first Sustainability Multidisciplinary Meetup, bringing together early career researchers to kick off the SHAPEing Net Zero Collective.",
+      "images": [
+        "images/events/smm1-1.jpg",
+        "images/events/smm1-2.jpg",
+        "images/events/smm1-3.jpg"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "SMM2",
+      "status": "past",
+      "date_label": "Oct 2023",
+      "city": "Bristol",
+      "venue": "University of the West of England",
+      "summary": "The second meetup, hosted in Bristol, expanding the network and deepening cross-disciplinary conversations on net zero transitions.",
+      "images": [
+        "images/events/smm2-1.jpg",
+        "images/events/smm2-2.jpg"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "SMM3",
+      "status": "upcoming",
+      "date_label": "Spring 2025",
+      "city": "TBC",
+      "venue": "Venue to be confirmed",
+      "summary": "The third Sustainability Multidisciplinary Meetup. Details coming soon.",
+      "images": []
     }
   ]
 }
