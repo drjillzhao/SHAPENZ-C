@@ -1,18 +1,76 @@
+
+STA-5CD60987HY, Connected
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Members · JSON
 {
   "items": [
     {
-      "name": "Dr. Jill Zhao",
-      "role": "Founder & Chair",
-      "institution": "University of West of England",
-      "bio": "Dr. Zhao is Senior Lecturer in Architecture at University of West of England. She gained her PhD at University of Edinburgh. Her research has a focus on investigating the social, technical and organisational changes in the transition to Net Zero in the Housing sector, and their policy implications.",
-      "image": "images/JZ_profile.jpg"
+      "name": "Dr Jill Zhao",
+      "role": "Founder & Project Lead",
+      "institution": "UWE Bristol",
+      "bio": "Founder of the SHAPEing Net Zero Collective and project lead funded by the British Academy. Research focuses on sustainable built environments, net zero housing transitions, and climate justice.",
+      "image": "images/members/jill-zhao.jpg",
+      "linkedin": "",
+      "orcid": "",
+      "twitter": ""
     },
     {
-      "name": "Add a member",
-      "role": "Role / title",
-      "institution": "Institution",
-      "bio": "Use the editor dashboard (/admin) or edit content/members.json to add real member profiles.",
-      "image": "images/member-placeholder.svg"
+      "name": "Dr Jayakumar Chinnasamy",
+      "role": "Lecturer in Education",
+      "institution": "University of the West of Scotland",
+      "bio": "Specialises in higher education internationalisation, global citizenship, and sustainable development. Brings over two decades of experience across academia in the UK, India, Bhutan, and Bahrain.",
+      "image": "images/members/Dr Jayakumar Chinnasamy.jpg",
+      "linkedin": "https://www.linkedin.com/in/jchinnasamy/",
+      "orcid": "https://orcid.org/0000-0001-7580-7990",
+      "twitter": ""
+    },
+    {
+      "name": "Dr Muzammal Ahmed Khan",
+      "role": "Lecturer in Business and Management Studies",
+      "institution": "University of the West of Scotland",
+      "bio": "Researches corporate social responsibility, sustainability reporting, and environmental governance, with strong alignment to the UN SDGs. Senior Fellow of the Higher Education Academy.",
+      "image": "images/members/Dr Muzammal Ahmed Khan.jpg",
+      "linkedin": "https://www.linkedin.com/in/muzammal-ahmad-khan-71b65152/",
+      "orcid": "https://orcid.org/0000-0001-9729-5412",
+      "twitter": "https://twitter.com/MuzKhan9"
+    },
+    {
+      "name": "Dr Sue Langford",
+      "role": "Researcher",
+      "institution": "",
+      "bio": "Early career researcher in the SHAPEing Net Zero Collective working across SHAPE disciplines on sustainability and net zero transitions.",
+      "image": "images/members/Dr Sue Langford.jpg",
+      "linkedin": "",
+      "orcid": "",
+      "twitter": ""
     }
   ]
 }
