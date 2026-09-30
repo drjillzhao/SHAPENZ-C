@@ -11,31 +11,70 @@
       "images": [
         "images/events/smm1-1.jpg",
         "images/events/smm1-2.jpg",
-        "images/events/smm1-3.jpg"
+        "images/events/smm1-3.jpg",
+        "images/events/smm1-4.jpg",
+        "images/events/smm1-5.jpg",
+        "images/events/smm1-6.jpg"
       ]
     },
     {
       "order": 2,
       "title": "SMM2",
       "status": "past",
-      "date_label": "Oct 2023",
+      "date_label": "Apr 2023",
       "city": "Bristol",
-      "venue": "University of the West of England",
+      "venue": "University of the West of England JISC campus",
       "summary": "The second meetup, hosted in Bristol, expanding the network and deepening cross-disciplinary conversations on net zero transitions.",
       "images": [
         "images/events/smm2-1.jpg",
-        "images/events/smm2-2.jpg"
+        "images/events/smm2-2.jpg",
+        "images/events/smm2-3.jpg",
+        "images/events/smm2-4.jpg",
+        "images/events/smm2-5.jpg",
+        "images/events/smm2-6.jpg"
       ]
     },
     {
       "order": 3,
       "title": "SMM3",
-      "status": "upcoming",
-      "date_label": "Spring 2025",
-      "city": "TBC",
-      "venue": "Venue to be confirmed",
-      "summary": "The third Sustainability Multidisciplinary Meetup. Details coming soon.",
-      "images": []
+      "status": "past",
+      "date_label": "Apr 2025",
+      "city": "Bristol",
+      "venue": "University of the West of England Frenchay Campus",
+      "summary": "The third meetup, spanning over 2 days, hosted in Bristol, featuring 3MT competition",
+      "images": [
+        "images/events/smm3-1.jpg",
+        "images/events/smm3-2.jpg",
+        "images/events/smm3-3.jpg",
+        "images/events/smm3-4.jpg",
+        "images/events/smm3-5.jpg",
+        "images/events/smm3-6.jpg",
+        "images/events/smm3-7.jpg",
+        "images/events/smm3-8.jpg",
+        "images/events/smm3-9.jpg",
+        "images/events/smm3-10.jpg",
+        "images/events/smm3-11.jpg",
+        "images/events/smm3-12.jpg",
+        "images/events/smm3-13.jpg"
+        ]
+    },
+    {
+      "order": 4,
+      "title": "SMM4",
+      "status": "past",
+      "date_label": "May 2026",
+      "city": "Glasgow",
+      "venue": "University of the West of Scotland",
+      "summary": "The 4th meetup, hosted in Paisley, Scotland",
+      "images": [
+        "images/events/smm4-1.jpg",
+        "images/events/smm4-2.jpg",
+        "images/events/smm4-3.jpg",
+        "images/events/smm4-4.jpg",
+        "images/events/smm4-5.jpg",
+        "images/events/smm4-6.jpg",
+        "images/events/smm4-7.jpg",
+      ]
     }
   ]
 }
